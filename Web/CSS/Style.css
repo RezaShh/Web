@@ -1,0 +1,77 @@
+/*this is how to comment in css*/
+/*sites for check: mozilla.org, caniuse.com*/
+header {
+    font-size: large;
+    font-weight: bold;
+}
+/*==========================================================================================*/
+#first_paragraph {
+    background-color: blueviolet;
+}
+.second_paragraphs {
+    background-color: brown;
+}
+/*==========================================================================================*/
+.color_red {
+    color: red;
+}
+.background_yellow {
+    background-color: yellow;
+}
+/*==========================================================================================*/
+/*وابستگی*/
+.color_red.background_yellow {
+    font-weight: bold;
+}
+.color_red#paragraph {
+    font-style: italic;
+}
+label.background_yellow {
+    font-size: x-large;
+}
+/*چند سطحی*/
+div div p {
+    background-color: blue;
+}
+#first #second #therd {
+    background-color: aqua;
+}
+/*==========================================================================================*/
+a[href] {
+    color: rgb(72, 99, 45);
+}
+a[href="www.atismobile.ir"] {
+    color: blue;
+}
+a[href*="sample"] {
+    color: rgb(102, 204, 0);
+}
+a[href$="org"] {
+    color: rgb(0, 65, 102);
+    background-color: black;
+}
+header ul li[id~="new"] a{
+    background-color: darkgoldenrod;
+}
+/*==========================================================================================*/
+li > span {
+    background-color: brown;
+}
+li + span {
+    background-color: orangered;
+}
+li.item + span {
+    background-color: rgb(37, 20, 13);
+}
+li.item ~ span {
+    background-color: rgb(245, 127, 84);
+}
+/*==========================================================================================*/
+label:hover {
+    background-color: deeppink;
+    font-size: x-large;
+}
+label a:hover {
+    color:gold;
+}
+
