@@ -1,0 +1,252 @@
+/*this is how to comment in css*/
+/*sites for check: mozilla.org, caniuse.com*/
+header {
+    font-size: large;
+    font-weight: bold;
+}
+/*==========================================================================================*/
+#first_paragraph {
+    background-color: blueviolet;
+}
+.second_paragraphs {
+    background-color: brown;
+}
+/*==========================================================================================*/
+.color_red {
+    color: red;
+}
+.background_yellow {
+    background-color: yellow;
+}
+/*==========================================================================================*/
+/*وابستگی*/
+.color_red.background_yellow {
+    font-weight: bold;
+}
+.color_red#paragraph {
+    font-style: italic;
+}
+label.background_yellow {
+    font-size: x-large;
+}
+/*چند سطحی*/
+div div p {
+    background-color: blue;
+}
+#first #second #therd {
+    background-color: aqua;
+}
+/*==========================================================================================*/
+a[href] {
+    color: rgb(72, 99, 45);
+}
+a[href="www.atismobile.ir"] {
+    color: blue;
+}
+a[href*="sample"] {
+    color: rgb(102, 204, 0);
+}
+a[href$="org"] {
+    color: rgb(0, 65, 102);
+    background-color: black;
+}
+header ul li[id~="new"] a{
+    background-color: darkgoldenrod;
+}
+/*==========================================================================================*/
+li > span {
+    background-color: brown;
+}
+li + span {
+    background-color: orangered;
+}
+li.item + span {
+    background-color: rgb(37, 20, 13);
+}
+li.item ~ span {
+    background-color: rgb(245, 127, 84);
+}
+/*==========================================================================================*/
+label:hover {
+    background-color: deeppink;
+    font-size: x-large;
+}
+label a:hover {
+    color:gold;
+}
+li:hover {
+    background-color: darkcyan;
+}
+
+li:hover a {
+    color:white;
+}
+
+
+li::before {
+    content : " before ";
+    color : blue;
+}
+
+li::after {
+    content : " after ";
+    color : red;
+}
+
+p::first-line {
+    font-weight: bold;
+}
+/*==========================================================================================*/
+#tag_p {
+    background: aqua;
+    /*padding-left: 10px; 
+    padding-top: 10px; 
+    padding-right: 10px; 
+    padding-bottom: 10px; */
+    padding: 10px;
+        /*top right bottom left*/
+
+    /*border-width: 10px;
+    border-style: solid;
+    border-color: brown;*/
+    border: 10px solid brown;
+    
+    /*margin-left: 20%;
+    margin-top: 30px;
+    margin-right: 20%;
+    margin-bottom: 30px;*/
+    margin: 30px 20%; /*margin has a default value*/
+        /*top right bottom left*/
+
+    width: 50%;
+    height: auto;
+}
+/*
+مباحث ارث بری جدی گرفته شود در اچ تی ام ال و سی اس اس تگی
+ارجعیت دارد که جدید تر نوشته شده باشد مثلا بین فایل اول و دوم 
+لینک شده در فایل اچ تی ام ال فایل دوم ارجعیت دارد و
+در سی اس اس اگر استایلی به چیزی دادیم و مجدد استایل دیگری دادیم
+استایل های جدید جایگزین استایل های قبلی شده و استایل هایی که 
+تغییر نکنندهمچنان استفاده میشوند
+*/
+/*==========================================================================================*/
+.header {
+    /* background: url(./image.jpg) red fixed right 100px bottom 200px/cover; */
+    background-color: yellow;
+    width: 100%;
+    background-image: url(./image2.jpg);
+    background-size:100% 100%;
+    background-position:0 40%;
+    background-repeat:no-repeat;
+    background-origin:padding-box;
+    background-clip:border-box;
+    background-attachment:fixed;
+    border : 10px solid green;
+    height: 400px;
+    box-sizing:border-box;
+    padding : 20px;
+    background: linear-gradient( /*to right*/ 236deg,red , blue 60%, green );
+}
+/*color: flatuicolors.com | uigredient.com
+/*==========================================================================================*/
+.header{
+    filter: blur(50);
+    width:100vw;
+    background: url(./image.jpg) fixed 0 40%/cover;
+    height: 40vh;
+    box-sizing: border-box;
+    padding : 1.1em;
+}
+/*==========================================================================================*/
+/* @font-face {
+    font-family: "Vazir-bold";
+    src :  url(./fonts/Vazir-Bold.eot);
+    src : url(./fonts/Vazir-Bold.eot) format("embedded-opentype"),
+            url(./fonts/Vazir-Bold.woff2) format("woff2"),          
+            url(./fonts/Vazir-Bold.woff) format("woff"),
+            url(./fonts/Vazir-Bold.ttf) format("truetype");
+}
+@font-face {
+    font-family: "Vazir-thin";
+    src :  url(./fonts/Vazir-Thin.eot);
+    src : url(./fonts/Vazir-Thin.eot) format("embedded-opentype"),
+            url(./fonts/Vazir-Thin.woff2) format("woff2"),          
+            url(./fonts/Vazir-Thin.woff) format("woff"),
+            url(./fonts/Vazir-Thin.ttf) format("truetype");
+} */
+/*==========================================================================================*/
+.header .paragraph {
+    font : 300 italic 16px/1.8 "Vazir";
+    line-height: 1.8;
+    /* text-decoration: underline wavy red; */
+    text-decoration: underline;
+    text-align: justify;
+    word-spacing: 10px;
+    letter-spacing: 2px;
+    word-break: break-all;/*زمانی که متنی توسط دیگران  به سایت اضافه میشود*/
+}
+.header .title {
+    margin-bottom: 15px;
+    font: bold 40px Vazir;
+    text-shadow: -3px 2px 0 rgba(255, 0, 0,.4);
+    white-space:initial/*pre-line*/;
+} 
+/*==========================================================================================*/
+
+.header .title {
+    margin-bottom: 15px;
+    font: bold 3em Vazir;
+    text-shadow: -3px 2px 0 rgba(255, 0, 0,.4);
+} 
+.header .paragraph {
+    font : 300 italic 1em/1.8 "Vazir";
+    /* text-decoration: underline wavy red; */
+    text-decoration: underline;
+}
+/*em px of father * mount*/
+/*rem: px of root(html) * mount*/
+/*==========================================================================================*/
+html {
+    font-family: "Vazir";
+    font-size: 100%;
+}
+
+body {
+    padding-top: 2rem;
+}
+
+p {
+    background-color: cadetblue;
+    padding: 1.2rem 2rem;
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    display: block;
+}
+
+header,
+section,
+aside,
+footer {
+    margin: 0 1.5rem 2rem;
+    display: block;
+    box-sizing:border-box;
+}
+/*==========================================================================================*/
+section {
+    float: left;
+}
+    
+aside {
+    float: right;
+}
+.clearfix:after,
+.clearfix:before {
+    content: "";
+    display : table;
+    clear: both ;
+}
+.clearfix:after {
+    clear: both ;
+}
+/*==========================================================================================*/
