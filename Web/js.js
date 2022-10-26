@@ -194,7 +194,6 @@ visible: ${this.isVisible}`
 
 // console.log(another);
 
-console.log("hello")
 //==============================================
 
 // function random(min, max){
@@ -343,18 +342,18 @@ console.log("hello")
 
 //==============================================
 
-// let numbers = [1,-5,3,6,8]
+let numbers = [1,-5,3,6,8]
 // // let filter = numbers.filter(value => value > 3)
 // // console.log(filter)
 
-// //==============================================
+//==============================================
 
 // let result = numbers.map(value => value * 2)
 // console.log(result)
 // let result_2 = numbers.map(value => ({item : value}))
 // console.log(result_2)
 
-// //==============================================
+//==============================================
 // // 6:10
 
 // // method => obj
@@ -364,10 +363,10 @@ console.log("hello")
 //         console.log(this)
 //     }
 // }
-// //function => global(window, global)
-// function playvideo(){
-//     console.log(this)
-// }
+//function => global(window, global)
+function playvideo(){
+    console.log(this)
+}
 // playvideo()
 // //global object in browser => window
 // //global object in node => global
@@ -390,7 +389,7 @@ console.log("hello")
 
 // Videos.showTag()
 
-// //==============================================
+//==============================================
 // //function declaration
 // walk();
 // function walk(){
@@ -405,7 +404,7 @@ console.log("hello")
 // let move = run;
 // move();
 
-// //==============================================
+//==============================================
 
 // function sum(a,b){
 //     console.log(a+b)
@@ -428,7 +427,7 @@ console.log("hello")
 // }, 0)
 // console.log(numbers, sumtion)
 
-// //==============================================
+//==============================================
 
 // function interest(a, b, c=5){
 //     b = b || 3.5;
@@ -436,7 +435,7 @@ console.log("hello")
 // }
 // console.log(interest(15, 5, undefined))
 
-// //==============================================
+//==============================================
 
 // let person = {
 //     fname : 'reza',
@@ -447,8 +446,8 @@ console.log("hello")
 // }
 // console.log(person.fullname())
 
-// //getter => access properties
-// //setters => change (mutate)
+//getter => access properties
+//setters => change (mutate)
 
 // let person_2 = {
 //     fname : 'reza',
@@ -474,7 +473,7 @@ console.log("hello")
 // person_3.fullname = 'reyhane andalib';
 // console.log(person_3, person_3.fullname)
 
-// //==============================================
+//==============================================
 
 // function sump(args){
 //     console.log(args)
@@ -486,11 +485,11 @@ console.log("hello")
 // }
 // sump_2(1,2,3,4)
 
-// //==============================================
+//==============================================
 
 // numbers.forEach((number,i) => console.log(i,number))
 
-// //==============================================
+//==============================================
 
 // let paragraph = 'hello my name is Reza'
 // let seprate = paragraph.split(' ')
@@ -498,31 +497,62 @@ console.log("hello")
 // let joined = seprate.join('-');
 // console.log(joined)
 
-// //==============================================
+//==============================================
 
-// // change:
-// numbers.sort();
-// console.log(numbers)
-// // not change:
+// change:
+// for strings first make all char upper or lower case then sort them
+numbers.sort();
+console.log(numbers)
+numbers.sort(function(a,b){
+    if(a > b) return -1; /**return first parameter*/
+    else if(b > a) return 1; /**return second parameter*/
+    else return 0; /**nothing change*/
+});
+console.log(numbers)
+// not change:
 // let reverse = numbers.reverse();
 // console.log(reverse)
 
-// //==============================================
+//==============================================
 
+let person_3 = {
+    fname : 'reza',
+    lname : 'shahmoradi',
+    get fullname(){
+        return `${this.fname} ${this.lname}`
+    },
+    set fullname(value){
+        if (value !== 'string'){
+            //exception:
+            throw new Error('value is wrong');
+        }
+        if (parts) {
+            
+        }
+        // Error:
+        // let e = new Error();
+        // throw e;
+        let change = value.split(' ');
+        this.fname = change[0];
+        this.lname = change[1];
+    },
+};
 
+try {
+    person_3.fullname = true
+} catch (error) {
+    alert(error)
+}
 
+//==============================================
 
+// change this to what you want:
+playvideo.apply([{name:'AliReza'}, {name:'AliReza'}, {name:'AliReza'}]);
+playvideo.call({name:'AliReza'}, {name:'AliReza'}, {name:'AliReza'});
+let fn = playvideo.bind({name:'AliReza'});
+console.log(fn)
 
-
-
-
-
-
-
-
-
-
-
+7:32
 
 
 
