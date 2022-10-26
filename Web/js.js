@@ -550,7 +550,7 @@ playvideo.call({name:'AliReza'}, {name:'AliReza'}, {name:'AliReza'});
 let fn = playvideo.bind({name:'AliReza'});
 console.log(fn)
 
-// 7:32 not new
+// 7:32
 
 
 
