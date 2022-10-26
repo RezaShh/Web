@@ -1,128 +1,128 @@
+// // primitive(value) types
+// // string
+// // number
+// // bool
+// // undefined     هم مقدار هم نوع است
+// // null       مفهوم هیج دارد
 
-//primitive(value) types
-//string
-//number
-//bool
-//undefined     هم مقدار هم نوع است
-//null       مفهوم هیج دارد
-
-// let name = "Reza";
-// let age = 32;
-// const namee = "Reza2";
-// console.log("hello boy homo");
-// console.log(typeof age);
+// // let name = "Reza";
+// // let age = 32;
+// // const namee = "Reza2";
+// // console.log("hello boy homo");
+// // console.log(typeof age);
 
 //==============================================
 
 //reference types
 //object:
-// let person = {
-//     name : "Reza",
-//     age : 27,
-//     admin : true
-// };
-// console.log(person.admin);
-// console.log(person["age"]);
+// // let person = {
+// //     name : "Reza",
+// //     age : 27,
+// //     admin : true
+// // };
+// // console.log(person.admin);
+// // console.log(person["age"]);
 
 //array:
-// let users = ["mohammad", "ali", "reza"];
-// console.log(users);
-// console.log(users[0]);
-// users[2] = "reyhaneh";
-// users[3] = 2;
-// users[4] = true;
-// console.log(users.length);
+let users = ["mohammad", "ali", "reza"];
+// // console.log(users);
+// // console.log(users[0]);
+// // users[2] = "reyhaneh";
+// // users[3] = 2;
+// // users[4] = true;
+// // console.log(users.length);
 
 //function:
-// function greet(age){
-//     console.log("hello world");
-//     console.log(age * 10)
-//     return age
-// }
-// console.log(greet(), greet(24), greet(24));
-//==============================================
-
-// == != با مقدار کار دارد
-// === !== با نوع و مقدار کار دارد
+// // function greet(age){
+// //     console.log("hello world");
+// //     console.log(age * 10)
+// //     return age
+// // }
+// // console.log(greet(), greet(24));
 
 //==============================================
 
-// let what = false
-// let botten = what === true ? "hello" : "bye"
-// console.log(botten)
+// // == != با مقدار کار دارد
+// // === !== با نوع و مقدار کار دارد
 
 //==============================================
 
-// and: &&
-// or: ||
-// not: !...
-
-// false: undefined, null,  0, "", NaN
-// true: 1, -2, "..."
-// first true returns in or
-// first false returns in and
-
-// let answer = false || "neon", answer2 = 11 && 0
-// console.log(answer, answer2)
+// // let what = false
+// // let button = what === true ? "hello" : "bye"
+// // console.log(button)
 
 //==============================================
 
-// if (condition){
-//     statement
-// } else if(condition){
-//     statement
-// } else{
-//     statement
-// }
+// // and: &&
+// // or: ||
+// // not: !...
+
+// // false: undefined, null,  0, "", NaN
+// // true: 1, -2, "..."
+// // in or, first true returns 
+// // in and, first false returns 
+
+// // let answer = false || "neon", answer2 = 11 && 0
+// // console.log(answer, answer2)
 
 //==============================================
 
-// switch (key) {
-//     case value:
-//         break;
-//     default:
-//         break;
-// }
+// // if (condition){
+// //     statement
+// // } else if(condition){
+// //     statement
+// // } else{
+// //     statement
+// // }
 
 //==============================================
 
-// for (let i = 0; i < 5; i++) {
-//     console.log("Hi");
-// }
+// // switch (key) {
+// //     case value:
+// //         break;
+// //     default:
+// //         break;
+// // }
 
 //==============================================
 
-// while (condition) {
-//     statement
-// }
+// // for (let i = 0; i < 5; i++) {
+// //     console.log("Hi");
+// // }
 
 //==============================================
 
-// do {
-//     statement
-// } while (condition);
+// // while (condition) {
+// //     statement
+// // }
 
 //==============================================
 
-// for (let key in object/array) {
-//     statement
-// }
-// in returns index of array/object 
+// // do {
+// //     statement
+// // } while (condition);
 
 //==============================================
 
-// for (let index of object/array) {
-//     statement
-// }
-// of returns value of array/object
+// // for (let key in object/array) {
+// //     statement
+// // }
+// // in returns index of array/object 
 
 //==============================================
 
-//break , continue
+// // for (let index of object/array) {
+// //     statement
+// // }
+// // of returns value of array/object
 
 //==============================================
 
-let circle = {
+// //break , continue
+
+//==============================================
+
+let obj_circle = {
     radius : 1,
     location : {x:1, y:2},
     isVisible : true,
@@ -133,7 +133,7 @@ redius: ${this.radius}
 visible: ${this.isVisible}`
 )}
 }
-// circle.draw();
+// object == {}
 
 //==============================================
 
@@ -141,11 +141,10 @@ visible: ${this.isVisible}`
 // function createCircle(radius) {
 //     return {
 //         radius, /*radius : radius*/
-//         draw(){console.log('draw')}
 //     }
 // }
+
 // let circle_new = createCircle(5);
-// console.log(circle_new);
 
 //==============================================
 
@@ -157,7 +156,6 @@ visible: ${this.isVisible}`
 //     }
 // }
 // let circle3 = new Circle2(3);
-// console.log(circle3);
 
 //==============================================
 
@@ -168,15 +166,14 @@ visible: ${this.isVisible}`
 // circle4.color = "red";
 // circle4.draw = function(){
 // }
-// console.log(circle4)
 // delete circle4.draw;
 
 //==============================================
 
-// console.log(Object.entries(circle), Object.keys(circle));
-// if ("radius" in circle) {
+// console.log(Object.entries(obj_circle), Object.keys(obj_circle));
+// if ("radius" in obj_circle) {
 //     console.log("yes");
-//     console.log("draw" in circle);
+//     console.log("draw" in obj_circle);
 // }
 
 //==============================================
@@ -187,58 +184,54 @@ visible: ${this.isVisible}`
 // for (let key in circle){
 //     another[key] = circle[key];
 // }
-// // or
+
+// or
+
 // let another_2 = Object.assign({color : "red"}, circle);
-// // or
+
+// or
+
 // let another_3 = {color : "red" , ...circle}
 
-// console.log(another);
+//==============================================
+
+function random(min, max){
+    return Math.floor(Math.random() * (max-min) + min);
+}
+// console.log(
+    // random(8,10), 
+    // Math.round(4.5), 
+    // Math.max(1,2,3,6), 
+    // Math.min(1,6,9,5,8), 
+    // Math.abs(-58))
 
 //==============================================
 
-// function random(min, max){
-//     return Math.floor(Math.random() * (max-min) + min);
-// }
-// console.log(random(8,10), Math.round(4.5), Math.max(1,2,3,6), Math.min(1,6,9,5,8), Math.abs(-58))
+// String primive:
+let str = "   Reza \n, Hello  ";
 
-//==============================================
-
-// // String primive
-// const str = "reza  \n,  hello";
-
-// // string object
+// string object:
 // const str_2 = new String("    Reza   ");
 
-// console.log(typeof(str), typeof(str_2))
-
 // console.log(
-//     str,
-//     str.length, 
-//     str[0], 
-//     str.includes("e"), 
-//     str.startsWith("r"), 
-//     str.indexOf("a"), 
-//     str.replace("a","z"), 
-//     str.toUpperCase(), 
-//     str.toLowerCase(), 
-//     str.trim(), 
-//     str.trimEnd,
-//     str.split(",")
+// `${str},
+// ${str.length}, 
+// ${str[0]}, 
+// ${str.includes("e")}, 
+// ${str.startsWith("s")}, 
+// ${str.indexOf("a")}, 
+// ${str.replace("a","i")}, 
+// ${str.toUpperCase()}, 
+// ${str.toLowerCase()}, 
+// ${str.trimStart()},
+// ${str.trimEnd()},
+// ${str.trim()}, 
+// ${str.split(",")}`
 // )
 
 //==============================================
 
-// // object: {}
-// // true, false
-// // '' ""
-// // ``
-
-// const str_3 = `hello
-// my name is: ${name} :)`
-// console.log(str_3)
-
-//==============================================
-
+//Date:
 // const now = new Date();
 // const date1 = new Date('May 11 2020 09:10');
 // const date2 = new Date(2018,4,11,9,0);
@@ -260,91 +253,86 @@ visible: ${this.isVisible}`
 
 //==============================================
 
-// const numbers = [5,8,1,1,1];
+let array_numbers = [1,-5,3,6,8,1];
 // console.log(
 //     `
-//     ${numbers},
-//     ${numbers.push(6,4) /*add at the end of array*/},
-//     ${numbers.unshift(2)/*add at the start of the array*/},
-//     ${numbers.splice(2,0,"a","b")/*start index, number of delete elements, data to add*/},
-//     ${numbers},
-//     ${numbers.indexOf(4)},
-//     ${numbers.indexOf(1,2)},
-//     ${numbers.lastIndexOf(1)/*last unit that has the value*/},
-//     ${numbers.includes(8)},
-//     ${numbers.find(/*function without name:*/(num) =>  num > 2)}
+//     ${array_numbers},
+//     ${array_numbers.push(6,4) /*add at the end of array*/},
+//     ${array_numbers.unshift(2)/*add at the start of the array*/},
+//     ${array_numbers.splice(2,0,"a","b")/*start index, number of delete elements, data to add*/},
+//     ${array_numbers},
+//     ${array_numbers.indexOf(4)},
+//     ${array_numbers.indexOf(1,4)},
+//     ${array_numbers.lastIndexOf(1)/*last unit that has the given value*/},
+//     ${array_numbers.includes(0)},
+//     ${array_numbers.find(/*function without name:*/(num) =>  num > 5)},
+//     ${array_numbers.findIndex((num) =>  num > 5)}
 //     `
 // )
 
-// // let result = circle.find(function(ans){return ans.radius == 1})
-// // let result_2 = circle.findindex(function(ans){return ans.radius == 1})
-// // console.log(result, result_2)
+//==============================================
+
+// all change the main
+// console.log(array_numbers)
+// console.log(array_numbers.pop()) // delete from end
+// console.log(array_numbers.shift()) // delete from start
+// console.log(array_numbers.splice(2,3))
+// console.log(array_numbers)
 
 //==============================================
 
-// // all change the main
-// console.log(numbers)
-// console.log(numbers.pop()) // delete from end
-// console.log(numbers)
-// console.log(numbers.shift()) // delete from start
-// console.log(numbers)
-// console.log(numbers.splice(2,3))
-// console.log(numbers)
+//delete the whole array
+
+// numbers = []
+// or
+// numbers.length = 0
+// or
+// numbers.splice(0,numbers.length)
 
 //==============================================
 
-// //delete the whole array
-
-// // numbers = []
-// // or
-// // numbers.length = 0
-// // or
-// // numbers.splice(0,numbers.length)
-
-//==============================================
-
-// //no change if value was reference type it point to it's address
-// // let ans = numbers.concat(users)
-// //or
-// //ans.slice(2,4)  start index, end before index 
-// //or
-// // let ans = ['a', ...numbers, 'b', ...users, 'c']
-// // let slice = [...ans] : we copy it
+// no change if value was reference type it point to it's address
+// let ans = array_numbers.concat(users)
+// or
+// ans.slice(2,4)  // start index, end before index 
+// or
+// let ans = ['a', ...numbers, 'b', ...users, 'c']
+// let slice = [...ans] // : we copy it
 
 //==============================================
 
-// numbers.forEach((number,index) => {console.log(index, number)});
+// array_numbers.forEach((number,index) => {console.log(index, number)});
 
 //==============================================
 
-// // console.log(numbers.join(' '))
-// // console.log(numbers.split())
+// console.log(numbers.join(' '))
+// console.log(numbers.split(','))
 
 //==============================================
 
-// // .sort change
+// .sort change:
 // circle.sort((a,b) => {
 //     a = a.name.toLowerCase();
 //     b = b.name.toLowerCase();
 //     if (a < b) return 1;
-//     if(b > a) return -1;
+//     if(a > b) return -1;
 //     return 0;
-    
+
 // })
-// //not change:
+//not change:
 // numbers.reverse()
 
 //==============================================
 
-// //check
+//search online:
 // numbers.every((value, index, array) => { return value >=0; })
 // numbers.some((value, index, array) => { return value >=0; })
 
 //==============================================
 
 let numbers = [1,-5,3,6,8]
-// // let filter = numbers.filter(value => value > 3)
-// // console.log(filter)
+// let filter = numbers.filter(value => value > 3)
+// console.log(filter)
 
 //==============================================
 
@@ -354,29 +342,30 @@ let numbers = [1,-5,3,6,8]
 // console.log(result_2)
 
 //==============================================
-// // 6:10
+// 6:10
 
-// // method => obj
+// method => obj
 // let video = {
 //     title : 'a',
 //     play(){
 //         console.log(this)
 //     }
 // }
+
 //function => global(window, global)
-function playvideo(){
-    console.log(this)
-}
+// function playvideo(){
+//     console.log(this)
+// }
 // playvideo()
-// //global object in browser => window
-// //global object in node => global
+//global object in browser => window
+//global object in node => global
 
 // function Video(title){
 //     this.title = title,
 //     console.log(this)
 // }
 // let v = new Video('abc')
-// // new: point to somewhere 
+// new: point to somewhere 
 
 // let Videos = {
 //     title : 'a',
@@ -390,13 +379,13 @@ function playvideo(){
 // Videos.showTag()
 
 //==============================================
-// //function declaration
+//function declaration
 // walk();
 // function walk(){
 //     console.log('walk')
 // }
 
-// //function experession
+//function experession
 // let run = function(){
 //     console.log('run')
 // };
@@ -446,8 +435,8 @@ function playvideo(){
 // }
 // console.log(person.fullname())
 
-//getter => access properties
-//setters => change (mutate)
+// //getter => access properties
+// //setters => change (mutate)
 
 // let person_2 = {
 //     fname : 'reza',
@@ -496,6 +485,15 @@ function playvideo(){
 // console.log(seprate)
 // let joined = seprate.join('-');
 // console.log(joined)
+
+//==============================================
+
+// // change:
+// numbers.sort();
+// console.log(numbers)
+// // not change:
+// let reverse = numbers.reverse();
+// console.log(reverse)
 
 //==============================================
 
@@ -552,7 +550,8 @@ playvideo.call({name:'AliReza'}, {name:'AliReza'}, {name:'AliReza'});
 let fn = playvideo.bind({name:'AliReza'});
 console.log(fn)
 
-7:32
+// 7:32
+
 
 
 
