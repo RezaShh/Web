@@ -342,7 +342,7 @@ let numbers = [1,-5,3,6,8]
 // console.log(result_2)
 
 //==============================================
-// 6:10
+//                                                                      review Point
 
 // method => obj
 // let video = {
@@ -550,18 +550,47 @@ playvideo.call({name:'AliReza'}, {name:'AliReza'}, {name:'AliReza'});
 let fn = playvideo.bind({name:'AliReza'});
 console.log(fn)
 
-// 7:32
+//==============================================
 
+//Procedural Programming:
+let baseSalary = 30000;
+let overtime = 10;
+let rate = 20;
 
+function gerWage(baseSalary,overtime,rate){
+    return baseSalary + (overtime * rate)
+}
 
+//OOP:
+//incapsolation
+let employee = {
+    baseSalary : 30000,
+    overtime : 10,
+    rate : 20,
+    getWage(){
+        return baseSalary + (overtime * rate)
+    }
+}
+//apstraction مخفی کردن از دید خارج
+//polimorfizem چند ریختی
+// apstraction
 
+// this.@ make that thing public
+// let or const make thing privet
 
+// call Shape:
+// base class, super class, parent class
 
+// call circle, square:
+// dirived class, sub class, child class
 
+// circle IS-A shape
+// دایره فرزند شیپ
 
+//==============================================
 
-
-
+// Prototype(پدر):
+// 8:03
 
 
 
