@@ -354,9 +354,9 @@ let numbers = [1,-5,3,6,8]
 // }
 
 //function => global(window, global)
-// function playvideo(){
-//     console.log(this)
-// }
+function playvideo(){
+    console.log(this)
+}
 
 //global object in browser => window
 //global object in node => global
@@ -592,6 +592,78 @@ let employee = {
 
 // Prototype(پدر):
 // 8:03
+
+// هر چیزی که کانتاراکتور یکسانی داشته باشند پروتوتایپ یکسانی دارند
+
+// property , attribute 
+
+console.log(Object.getPrototypeOf(person_3))
+
+Object.defineProperty(person_3, 'fname', {
+    writable : false,
+    enumerable : false
+});
+console.log(Object.keys(person_3))
+person_3.fname = 'shirazi'
+console.log(person_3)
+
+//==============================================
+
+let obj = {}
+console.log(obj.__proto__)
+console.log(Object.prototype)
+
+let array = {}
+console.log(array.__proto__)
+console.log(Array.prototype)
+
+//==============================================
+
+// Instance members
+function Circle(radius){
+    this.radius = radius;
+    this.move = function(){
+        this.draw();
+        console.log('move');
+    }    
+}
+
+// Prototype members
+Circle.prototype.draw = function(){
+    console.log('draw');
+}
+Circle.prototype.toString = function(){
+    console.log(`the radius is : ${this.radius}`)
+}
+
+let c1 = new Circle(1)
+let c2 = new Circle(2)
+
+// Circle.prototype === c1.__proto__
+
+console.log(c1);
+c1.draw()
+c1.toString()
+console.log(c2);
+c2.move()
+c2.toString()
+
+//==============================================
+
+// returns instance members
+// console.log(Object.keys(c1));
+
+// returns all members (instance and prototype)
+// for (let key in c1) {
+//     console.log(key)
+// }
+
+console.log(c1.hasOwnProperty('radius'))
+
+//==============================================
+
+// 8:36:57
+
 
 
 
