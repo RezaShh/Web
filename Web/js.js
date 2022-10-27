@@ -342,7 +342,8 @@ let numbers = [1,-5,3,6,8]
 // console.log(result_2)
 
 //==============================================
-//                                                                      review Point
+
+//                                                                           review Point
 
 // method => obj
 // let video = {
@@ -356,7 +357,7 @@ let numbers = [1,-5,3,6,8]
 // function playvideo(){
 //     console.log(this)
 // }
-// playvideo()
+
 //global object in browser => window
 //global object in node => global
 
@@ -365,18 +366,18 @@ let numbers = [1,-5,3,6,8]
 //     console.log(this)
 // }
 // let v = new Video('abc')
-// new: point to somewhere 
+// new: point to somewhere  ??????
 
-// let Videos = {
-//     title : 'a',
-//     tag : ['a','b','c','d'],
-//     showTag(){
-//         this.tag.forEach((tags) => console.log(this,tags), this)
-//         console.log(this)
-//     }
-// }
+let Videos = {
+    title : 'a',
+    tag : ['a','b','c','d'],
+    showTag(){
+        this.tag.forEach((tags) => console.log(this,tags), this)
+        console.log(this)
+    }
+}
 
-// Videos.showTag()
+Videos.showTag()
 
 //==============================================
 //function declaration
@@ -539,7 +540,7 @@ let person_3 = {
 try {
     person_3.fullname = true
 } catch (error) {
-    alert(error)
+    //alert(error)
 }
 
 //==============================================
