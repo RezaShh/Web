@@ -368,16 +368,16 @@ function playvideo(){
 // let v = new Video('abc')
 // new: point to somewhere  ??????
 
-let Videos = {
-    title : 'a',
-    tag : ['a','b','c','d'],
-    showTag(){
-        this.tag.forEach((tags) => console.log(this,tags), this)
-        console.log(this)
-    }
-}
+// let Videos = {
+//     title : 'a',
+//     tag : ['a','b','c','d'],
+//     showTag(){
+//         this.tag.forEach((tags) => console.log(this,tags), this)
+//         console.log(this)
+//     }
+// }
 
-Videos.showTag()
+// Videos.showTag()
 
 //==============================================
 //function declaration
@@ -489,25 +489,16 @@ Videos.showTag()
 
 //==============================================
 
-// // change:
-// numbers.sort();
-// console.log(numbers)
-// // not change:
-// let reverse = numbers.reverse();
-// console.log(reverse)
-
-//==============================================
-
 // change:
 // for strings first make all char upper or lower case then sort them
-numbers.sort();
-console.log(numbers)
-numbers.sort(function(a,b){
-    if(a > b) return -1; /**return first parameter*/
-    else if(b > a) return 1; /**return second parameter*/
-    else return 0; /**nothing change*/
-});
-console.log(numbers)
+// numbers.sort();
+// console.log(numbers)
+// numbers.sort(function(a,b){
+//     if(a > b) return -1; /**return first parameter*/
+//     else if(b > a) return 1; /**return second parameter*/
+//     else return 0; /**nothing change*/
+// });
+// console.log(numbers)
 // not change:
 // let reverse = numbers.reverse();
 // console.log(reverse)
@@ -525,9 +516,7 @@ let person_3 = {
             //exception:
             throw new Error('value is wrong');
         }
-        if (parts) {
-            
-        }
+        
         // Error:
         // let e = new Error();
         // throw e;
@@ -546,35 +535,34 @@ try {
 //==============================================
 
 // change this to what you want:
-playvideo.apply([{name:'AliReza'}, {name:'AliReza'}, {name:'AliReza'}]);
-playvideo.call({name:'AliReza'}, {name:'AliReza'}, {name:'AliReza'});
-let fn = playvideo.bind({name:'AliReza'});
-console.log(fn)
+// playvideo.apply([{name:'AliReza'}, {name:'AliReza'}, {name:'AliReza'}]);
+// playvideo.call({name:'AliReza'}, {name:'AliReza'}, {name:'AliReza'});
+// let fn = playvideo.bind({name:'AliReza'});
+// console.log(fn)
 
 //==============================================
 
 //Procedural Programming:
-let baseSalary = 30000;
-let overtime = 10;
-let rate = 20;
+// let baseSalary = 30000;
+// let overtime = 10;
+// let rate = 20;
 
-function gerWage(baseSalary,overtime,rate){
-    return baseSalary + (overtime * rate)
-}
+// function gerWage(baseSalary,overtime,rate){
+//     return baseSalary + (overtime * rate)
+// }
 
 //OOP:
 //incapsolation
-let employee = {
-    baseSalary : 30000,
-    overtime : 10,
-    rate : 20,
-    getWage(){
-        return baseSalary + (overtime * rate)
-    }
-}
+// let employee = {
+//     baseSalary : 30000,
+//     overtime : 10,
+//     rate : 20,
+//     getWage(){
+//         return baseSalary + (overtime * rate)
+//     }
+// }
 //apstraction مخفی کردن از دید خارج
 //polimorfizem چند ریختی
-// apstraction
 
 // this.@ make that thing public
 // let or const make thing privet
@@ -590,63 +578,63 @@ let employee = {
 
 //==============================================
 
-// Prototype(پدر):
-// 8:03
+// Prototype(پدر)
 
 // هر چیزی که کانتاراکتور یکسانی داشته باشند پروتوتایپ یکسانی دارند
 
-// property , attribute 
+// property:
+// attribute:
 
-console.log(Object.getPrototypeOf(person_3))
+// console.log(Object.getPrototypeOf(person_3))
 
-Object.defineProperty(person_3, 'fname', {
-    writable : false,
-    enumerable : false
-});
-console.log(Object.keys(person_3))
-person_3.fname = 'shirazi'
-console.log(person_3)
+// Object.defineProperty(person_3, 'fname', {
+//     writable : false,
+//     enumerable : false
+// });
+// console.log(Object.keys(person_3))
+// person_3.fname = 'shirazi'
+// console.log(person_3)
 
 //==============================================
 
-let obj = {}
-console.log(obj.__proto__)
-console.log(Object.prototype)
+// let obj = {}
+// console.log(obj.__proto__)
+// console.log(Object.prototype)
 
-let array = {}
-console.log(array.__proto__)
-console.log(Array.prototype)
+// let array = {}
+// console.log(array.__proto__)
+// console.log(Array.prototype)
 
 //==============================================
 
 // Instance members
-function Circle(radius){
-    this.radius = radius;
-    this.move = function(){
-        this.draw();
-        console.log('move');
-    }    
-}
+// function Circle(radius){
+//     this.radius = radius;
+//     this.move = function(){
+//         this.draw();
+//         console.log('move');
+//     }    
+// }
 
 // Prototype members
-Circle.prototype.draw = function(){
-    console.log('draw');
-}
-Circle.prototype.toString = function(){
-    console.log(`the radius is : ${this.radius}`)
-}
+// Circle.prototype.draw = function(){
+//     console.log('draw');
+// }
+// Circle.prototype.toString = function(){
+//     console.log(`the radius is : ${this.radius}`)
+// }
 
-let c1 = new Circle(1)
-let c2 = new Circle(2)
+// let c1 = new Circle(1)
+// let c2 = new Circle(2)
 
 // Circle.prototype === c1.__proto__
 
-console.log(c1);
-c1.draw()
-c1.toString()
-console.log(c2);
-c2.move()
-c2.toString()
+// console.log(c1);
+// c1.draw()
+// c1.toString()
+// console.log(c2);
+// c2.move()
+// c2.toString()
 
 //==============================================
 
@@ -658,13 +646,27 @@ c2.toString()
 //     console.log(key)
 // }
 
-console.log(c1.hasOwnProperty('radius'))
+// console.log(c1.hasOwnProperty('radius'))
 
 //==============================================
 
-// 8:36:57
+function Shape(){
+    console.log('shape')
+}
+Shape.prototype.repeat = function(){
+    console.log('repeat')
+}
+function Circle(radius){
+    this.radius = radius;
+    console.log(radius)
+}
+Circle.prototype = Object.create(Shape.prototype); 
+//after reset up we should reset:
+Circle.prototype.constructor = Circle;
 
-
-
-
+Circle.prototype.draw = function draw(){
+    console.log('draw')
+}
+let c = new Circle(2)
+console.log(c) 
 
