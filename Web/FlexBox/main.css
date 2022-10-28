@@ -1,0 +1,22 @@
+body{
+    font-size: 16px;
+}
+.container{
+    background-color: aqua;
+    border: 4px solid black;
+}
+.container > div{
+    font-size: 1.4em;
+    color: black;
+    padding: 10px;
+    text-align: center;
+}
+.search{
+    background-color: aquamarine;
+}
+.home{
+    background-color: bisque;
+}
+.login{
+    background-color: cadetblue;
+}
