@@ -1,0 +1,36 @@
+/*flat ui colers.com*/
+.container{
+    display: grid;
+    /*grid-template-columns: 200px auto 200px; چند ستون داشته باشد*/
+    /*grid-template-columns: 1fr 3fr 1fr;*/
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 100px 100px;
+    gap: 2px 5px;
+    /* row-gap: 2px;
+    column-gap: 5px; */
+}
+.container > div{
+    padding: 30px;
+    font-size: 20px;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+/*  .container > div:nth-child(even){
+    background-color: aqua;
+}
+.container > div:nth-child(odd){
+    background-color: cadetblue;
+} */
+.header{
+    background-color: antiquewhite;
+}
+.content{
+    background-color:skyblue;
+}
+.menu{
+    background-color:violet;
+}
+.footer{
+    background-color:tomato;
+}

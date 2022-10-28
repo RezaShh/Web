@@ -1,3 +1,27 @@
 .container{
     display: flex;
+    flex-direction:row;
+    /*main acsess, cross acsess*/
+    justify-content:space-around; /*work with main acsess*/
+    align-items:center; /*work with cross acsess*/
+    flex-wrap: wrap; /*فضا کم باشد ایتم هارا به خط بعد میبرد*/
+}
+.search{
+    flex: 1;
+    /* flex-grow: 1; زمانی که فضا زیاد داریم
+    flex-shrink: 1; زمانی که فضا کمتر از میزان مدنظر داریم
+    flex-basis: 0; */
+    align-self: flex-start;
+    order: 1;
+}
+.home{
+    margin-left: auto;
+    flex: 2;
+    align-self: center;
+    order: 0;
+}
+.login{
+    flex: 1;
+    align-self: flex-end;
+    order: 0;
 }
