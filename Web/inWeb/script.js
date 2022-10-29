@@ -58,4 +58,52 @@ navigator.saysWho = (() => {
   console.log(navigator.saysWho) // outputs: `Chrome 89`
 // END
 
-window.page
+window.pageYOffset
+window.pageXOffset
+window.screenX /*فاصله صفحه تا انتهای کناری */
+window.screenLeft
+window.screenY
+window.screenTop
+
+// =================================================
+
+window.alert("hello")
+let myWin = window.open("https://atismobile.ir", 'atis', 300) /**ابجکت صفحه جدید را مورد نظر میگیرد */
+myWin.focus()
+myWin.close()
+
+myWin.opener /**ابجکت باز کننده صفحه را برمیگرداند */
+
+window.confirm('confirm!') /**returns bool */
+
+window.print() /**real print */
+let pro = prompt('enter your name')
+console.log(pro)
+
+window.stop() /**stop load */
+
+let inrev = setInterval(()=>{
+  console.log('hello')
+}, 3000)
+//heppen every 3 second and repeat
+
+setTimeout(()=>{
+  console.log('hello')
+}, 3000)
+//heppen every 3 second but not repeat
+
+/*clearInterval(inrev) /**stop interval */
+/*clearTimeout(...) /**stop timeout */
+
+window.scroll(100,200)
+window.scrollTo(100,300)
+
+window.innerHeight /**صفحه ای که کاربر میبیند */
+window.innerWidth
+
+window.matchMedia("(min-width:824px)").matches /**returns bool */
+window.matchMedia("(max-width:824px)").matches /**returns bool */
+
+// 1:20
+
+
