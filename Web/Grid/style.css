@@ -10,6 +10,7 @@
     grid-template-rows: 100px 300px 100px;
 
     grid-template-areas:
+    
     "m m h h h h h h h h h h"
     "m m c c c c c c c c c c"
     "f f f f f f f f f f f f"
