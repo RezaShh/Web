@@ -104,6 +104,79 @@ window.innerWidth
 window.matchMedia("(min-width:824px)").matches /**returns bool */
 window.matchMedia("(max-width:824px)").matches /**returns bool */
 
-// 1:20
+// part of URL
+window.location.hostname
+window.location.protocol
+window.location.port
+window.location.pathname
+window.location.hash // زمانی که چیزی به یوار ال اضافه میشود هش گفته میشود
+window.location.search // مروبط به جایی از یو ار ال میشود که ما اطلاعاتی را از طریق یو ار ال به سرور بفرستیم
+window.location.href // all of URL
+window.location.host // ip and port
+location.origin // protocol ip port
+location.assign("http...") // chage URL to what you given   هر قسمتی که ذکر نشود تغغیر نمیکند
+// or 
+location.href = "https://......"
+location.reload()
+location.replace("https://........") //جایگزین میشود و قابل بازگشت به صفحه قبل نیست
+
+
+window.history
+history.length //تعداد تب هایی که در ان صفحه رفتیم
+history.back()
+history.forward()
+history.go(-1,1,2) //جابجایی بید صفحات
+
+// one page aplication 1:50
+
+history.state // change path but no reload and request
+history.pushState({id:2}, "js", "js-tetorial")
+
+window.innerHeight
+window.outerWidth 
+
+// work with devise
+window.screen
+screen.width
+screen.height
+screen.availWidth
+screen.availHeight
+screen.orientation.type
+
+// storage in browser, application show cookies
+window.document
+document.cookie = "product_name = ball;" // delete because it doesn't have expires time
+document.cookie = "name = Reza; max-age = 5" // 5s
+let date = new Date("2015/1/1").toUTCString()
+document.cookie = `name = Reza; expires = ${date}`
+// for delete change date to a time in past
+// 2:29
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
