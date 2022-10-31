@@ -143,26 +143,35 @@ screen.availWidth
 screen.availHeight
 screen.orientation.type
 
-// storage in browser, application show cookies
+// storage in browser, application show cookies, 4k, in all tab we can use
 window.document
 document.cookie = "product_name = ball;" // delete because it doesn't have expires time
 document.cookie = "name = Reza; max-age = 5" // 5s
 let date = new Date("2015/1/1").toUTCString()
 document.cookie = `name = Reza; expires = ${date}`
 // for delete change date to a time in past
-// 2:29
+
+window.localStorage // application part, in all tab we can use
+localStorage.setItem('name', 'Reza')
+localStorage.setItem("age", 22)
+
+localStorage.getItem("age")
+localStorage.getItem("age")
+
+localStorage.removeItem('age')
+localStorage.clear()
+
+// just in one tab use, remove when we close page
+sessionStorage.setItem("name", "mogamad")
+sessionStorage.getItem('name')
 
 
+// 2:40 location
 
 
+// DOM : document object model
 
-
-
-
-
-
-
-
+// .....dummyProject
 
 
 
