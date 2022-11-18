@@ -13,3 +13,4 @@ http methods:
   put (update data)
   delete (delete data)
 
+for test our api use postman website (fake api: reqres.in)

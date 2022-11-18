@@ -51,7 +51,7 @@
 
 //==============================================
 
-// write npm init => package.json
+// write npm init (-y for fast install)=> package.json
 // npm list (for package that are installed)
 // npm list --depth-0
 // npm i (install all package that are use in a project)
@@ -63,10 +63,40 @@
 //==============================================
 
 // search jalali moment npm =install> npm i jalali-moment => make node modules folder
-const moment = require("jalali-moment");
-console.log(moment(new Date()).locale("fa").format("YYYY/MM/DD"));
+// const moment = require("jalali-moment");
+// console.log(moment(new Date()).locale("fa").format("YYYY/MM/DD"));
 
 //==============================================
 
 // npm i jshint --save-dev (a package that programer use is not the program)
 // npm i jshint -g (install in global)
+
+//==============================================
+
+// npm i express
+const express = require("express");
+const app = express();
+// roate, callbackfunction
+app.get("/", (req, res) => {
+  res.send("hello express");
+});
+app.get("/api/users", (req, res) => {
+  res.send([
+    { id: 1, name: "reza" },
+    { id: 3, name: "reyhane" },
+  ]);
+});
+app.listen(3000, ()=>{
+  console.log('lesening on port 3000')
+})
+// npm i -g nodemon (restart with no stop)
+
+//==============================================
+
+// const port = process.env.port || 3000;
+// process.env.port => terminal : set port = ...
+// app.listen(port, () => {
+//   console.log(`lesening on port ${port}`);
+// }); when we dont want to use one port or use a host api 
+
+// 2:32
