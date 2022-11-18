@@ -1,0 +1,15 @@
+module repper function:
+  everyting you should know about 'module' & 'require' in node.js
+
+node website native module: path
+
+sincronic onsicronis mastery js video last parts
+
+extention jsonview
+
+http methods:
+  get (get data)
+  post (create data)
+  put (update data)
+  delete (delete data)
+
