@@ -13,6 +13,7 @@
     flex-basis: 0; مقدار پایه یا حداقل مورد نیاز اندازه */
     align-self: flex-start;
     order: 1;
+    /* اوردر کمتر بالاتر مقدار منفی نیز میتوان قرار داد */
 }
 .home{
     margin-left: auto;
