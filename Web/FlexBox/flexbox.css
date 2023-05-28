@@ -10,7 +10,7 @@
     flex: 1;
     /* flex-grow: 1; زمانی که فضا زیاد داریم
     flex-shrink: 1; زمانی که فضا کمتر از میزان مدنظر داریم
-    flex-basis: 0; */
+    flex-basis: 0; مقدار پایه یا حداقل مورد نیاز اندازه */
     align-self: flex-start;
     order: 1;
 }
@@ -24,4 +24,4 @@
     flex: 1;
     align-self: flex-end;
     order: 0;
-}
+ }
