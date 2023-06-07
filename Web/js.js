@@ -32,13 +32,13 @@ let users = ["mohammad", "ali", "reza"];
 // // users[4] = true;
 // // console.log(users.length);
 
-//function:
-// // function greet(age){
-// //     console.log("hello world");
-// //     console.log(age * 10)
-// //     return age
-// // }
-// // console.log(greet(), greet(24));
+// function:
+function greet(age){
+    console.log("hello world");
+    console.log(age * 10)
+    return age
+}
+console.log(greet(), greet(24));
 
 //==============================================
 

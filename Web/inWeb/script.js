@@ -4,7 +4,7 @@ console.log('log')
 console.error('error')
 console.info('info')
 
-let obj = {name : 'Reza', Lname : 'shahmorafi'}
+let obj = {name : 'Reza', Lname : 'shahmoradi'}
 let array = [1,2,3,4,5,6,7,8,9]
 console.table(obj)
 console.count(array)  /**شمارش دفعات اجرا */
